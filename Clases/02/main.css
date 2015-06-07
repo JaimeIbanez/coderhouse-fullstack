@@ -1,0 +1,19 @@
+body {
+	font-size: 16px;
+}
+
+.PrimerDiv {
+	margin: 0 auto; 
+	/*margin: 50px 40px 30px 20px;
+	es igual a...
+	margin-top: 50px;
+	margin-right: 40px;
+	margin-bottom: 30px;
+	margin-left: 20px;
+	Si se ponen sólo 2 valores en margin, el primero es superior e inferior y el segundo es izquierda y derecha*/
+	max-width: 6em;
+}
+
+.SegundoDiv {
+	width: 10em;
+}
