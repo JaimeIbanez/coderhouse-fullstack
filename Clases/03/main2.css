@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100%;
+}
+
+div, nav, section {
+	border: 2px solid #1EB370;
+}
+
+#page {
+	position: relative;
+}
+
+nav {
+	width: 200px;
+}
+
+#content {
+	margin-left: 200px;
+}
+
+.flexbox-ex {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	height: 100%;
+}
+
+@media (max-width: 500px) {
+	.flexbox-ex {
+		position: static;
+		height: auto;
+	}
+	#content {
+		margin-left: 0;
+	}
+}
