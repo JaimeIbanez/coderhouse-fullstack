@@ -1,0 +1,12 @@
+html, body {
+	background-color: red;
+}
+
+span {
+	font-style: italic;
+}
+
+li {
+	font-family: Courier;
+	font-size: 200%; /* = 2em */
+}
