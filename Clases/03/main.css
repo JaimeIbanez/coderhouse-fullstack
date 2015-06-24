@@ -1,0 +1,95 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	/* margin: 0; quitar margen por defecto del navegador*/
+	margin: 60px 0 0;
+}
+
+#content {
+	border: 2px solid black;
+	/*
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	*/
+	width: 50px;
+	padding: 5px;
+}
+
+.position-fixed {
+	position: fixed;
+	top: 0;
+	height: 30px;
+}
+
+.position-relative-ex {
+	position: relative;
+	top: 10px;
+}
+
+.position-absolute-ex {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	background-color: red;
+}
+
+.position-absolute-ex > div { /*div hijos inmediatos*/
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background-color: green;
+}
+
+.float-ex {
+	height: 80px;
+}
+
+.float-left {
+	background-color: red;
+	float: left;
+	height: 40px;
+	width: 40px;
+}
+
+.float-right {
+	background-color: green;
+	float: right;
+	height: 40px;
+	width: 40px;
+}
+
+.br { /*manera antigua de cortar flotado*/
+	clear: both;
+}
+
+.clearfix { /*nuevo hack para cortar flotado*/
+	overflow: auto;
+	zoom: 1; /*opcional en navegadores viejos*/
+}
+
+.display-inline-ex li {
+	display: inline-block;
+}
+
+.flexbox-ex {
+	/*centrado vertical con flexbox*/
+	display: -webkit-flex; /* -webkit chrome, -ms microsoft, -moz firefox*/
+	display: flex;
+	/*algunos navegadores soportan una u otra opción, ponerlas todas*/
+	-webkit-align-items: center;
+	align-items: center;
+	height: 100px;
+	border: 1px solid black;
+
+	/*centrado horizontal con flexbox*/
+	-webkit-justify-content: center;
+	justify-content: center;
+}	
+
+.flexbox-ex div {
+	background-color: red;
+	width: 50px;
+}
