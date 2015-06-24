@@ -1,0 +1,16 @@
+* {
+	box-sizing: border-box;
+}
+
+div, nav, section {
+	border: 2px solid #1EB370;
+}
+
+nav {
+	float: left;
+	width: 200px;
+}
+
+#content {
+	margin-left: 200px;
+}
